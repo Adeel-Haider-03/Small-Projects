@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2980b9;
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    width: 50%;
+}
+.container{
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid #adadad;
+}
+.form{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+form .text-field{
+    margin: 40px 30px;
+    border-bottom: 2px solid #adadad;
+}
+.text-field input{
+    padding: 0 5px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.text-field label{
+  display: block;
+  text-align: justify;
+font-size: large;
+transition: 0.5s ease-in-out;
+
+}
+.text-field input:focus {
+  margin-top: 5px;
+  border-bottom: 2px solid #2691d9;
+}
+
+div~label{
+    background-color: red;
+}
+.pass{
+    text-align: start;
+    margin-left: 29px;
+    margin-top: -6px ;
+    margin-bottom: 8px;
+   
+}
+.pass a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    
+}
+.pass a:hover{
+    text-decoration: underline;
+}
+
+ button{
+    background-color: #2980b9;
+    padding: 8px 164px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    color: white;
+    font-size: large;
+    width: 80%;
+ }
+ button:hover{
+    background-color: #0097fc;
+ }
+ p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+ p a{
+    text-decoration: none;
+    font-size: large;
+    color: #2980b9;
+ }
+ p a:hover{
+    text-decoration: underline;
+ }
+
+ @media (max-width:680px) {
+    button{
+        padding: 8px 30px;
+    }
+ }
