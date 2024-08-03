@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    background: transparent;
+    font-size: medium;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.green{
+    position: relative;
+    border: 1px mintcream solid; 
+    color: mintcream;
+    overflow: hidden;
+
+}
+.green:hover{
+    box-shadow: 5px 6px 20px 10px mintcream;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,black);
+    background-color: mintcream;
+    color: black;
+}
+
+
+.pink{
+    border: 1px pink solid;
+    color: pink;
+}
+.pink:hover{
+    box-shadow: 5px 6px 20px 10px pink;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,black);
+    background-color: pink;
+    color: black;
+}
+.aqua{
+    border: 1px aqua solid;
+    color: aqua;
+}
+.aqua:hover{
+    box-shadow: 5px 6px 20px 10px aqua;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,black);
+    background-color: aqua;
+    color: black;
+}
