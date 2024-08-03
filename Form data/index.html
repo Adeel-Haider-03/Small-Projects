@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <form action="/submit">
+        <label for="username">username</label>
+        <input type="text" id="username" name="username">
+        <label for="password">password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    <div>
+        <fieldset>
+            <legend>Your DATA</legend>
+            <h2 id="name">Your Name: </h2>
+            <h2 id="pass">Password: </h2>
+        </fieldset>
+    </div>
+    <script>
+        let form=document.querySelector("form");
+        let username=document.querySelector("#username");
+        let password=document.querySelector("#password");
+        let name=document.querySelector("#name");
+        let pass=document.querySelector("#pass");
+
+        form.addEventListener("submit",()=>{
+            event.preventDefault();
+
+            const Fname=username.value;
+           const Fpass=password.value;
+
+           name.innerText+=Fname;
+           pass.innerText+=Fpass;
+        })
+
+
+    </script>
+</body>
+</html>
